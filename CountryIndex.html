@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>BSL Examples : Country Page</title>
+      <link rel='stylesheet' href='scripts/bslex.css' type='text/css' media='screen' />
+      <script language='javascript'>
+		function startPlayer(objURL) {
+			parent.appletframe.startPlayer(objURL);
+		}
+		function SetClass(event,clazz){
+			var source;
+			// Fix for old IE versions
+			if (!event.target) { source = event.srcElement; } else { source = event.target; }
+			if (source.tagName=="TR"||source.tagName=="TABLE")
+				return;
+			while(source.tagName!="TD") {
+				// alert(source.tagName);
+				source=source.parentNode;
+			}
+			source.className=clazz;
+		}
+	  </script>
+	</head>
+
+    <body> 
+    
+	<header id="header">
+	<div class="innertube" style="vertical-align: middle;" >
+		<div style="float: left; width: 85%;" >
+			<font face='arial' size='5' color='#000066'><b>BSL Country Signs</b></font>
+		</div>
+		<div align="center" style="position: absolute; float: left; right: 15px;">
+			<input type='button' name='btn' value='Back'
+				onclick='window.location="TopIndex.html";'/>
+		</div>
+	</div>
+	</header>
+
+	<main id="main">
+	<div class="plain" >
+
+	<table class="indextab" >
+
+	  <tr>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/england.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/England.jpg" class="imgpane">
+			<br/>
+			England
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/wales.sigml")'
+			onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Wales.jpg" class="imgpane">
+			<br/>
+			Wales
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/scotland.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Scotland.jpg" class="imgpane">
+			<br/>
+			Scotland
+		</a>
+		</div>
+	  </td>
+
+ 	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/britain.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Britain.jpg" class="imgpane">
+			<br/>
+			Britain
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/france.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/France.jpg" class="imgpane">
+			<br/>
+			France
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/germany.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Germany.jpg" class="imgpane">
+			<br/>
+			Germany
+		</a>
+		</div>
+	  </td>
+
+	  </tr>
+
+	  <tr>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/austria.sigml")'
+			onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Austria.jpg" class="imgpane">
+			<br/>
+			Austria
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/switzerland.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Switzerland.jpg" class="imgpane">
+			<br/>
+			Switzerland
+		</a>
+		</div>
+	  </td>
+
+ 	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/holland.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Netherlands.jpg" class="imgpane">
+			<br/>
+			Holland
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/australia.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Australia.jpg" class="imgpane">
+			<br/>
+			Australia
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/america.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/America.jpg" class="imgpane">
+			<br/>
+			America
+		</a>
+		</div>
+	  </td>
+
+ 	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/belgium.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Belgium.jpg" class="imgpane">
+			<br/>
+			Belgium
+		</a>
+		</div>
+	  </td>
+
+	  </tr>
+
+	  <tr>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/greece.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Greece.jpg" class="imgpane">
+			<br/>
+			Greece
+		</a>
+		</div>
+	  </td>
+
+	  <td/>
+	  <td/>
+	  <td/>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/asia.sigml")'
+			onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Asia.jpg" class="imgpane">
+			<br/>
+			Asia
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/africa.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Africa.jpg" class="imgpane">
+			<br/>
+			Africa
+		</a>
+		</div>
+	  </td>
+	  
+	  </tr>
+
+	</table>
+
+	</div>
+	</main>
+	</body>
+</html>

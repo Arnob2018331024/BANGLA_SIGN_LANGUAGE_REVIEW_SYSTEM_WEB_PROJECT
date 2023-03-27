@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>BSL Examples : Numbers Page</title>
+      <link rel='stylesheet' href='scripts/bslex.css' type='text/css' media='screen' />
+      <script language='javascript'>
+		function startPlayer(objURL) {
+			parent.appletframe.startPlayer(objURL);
+		}
+		function SetClass(event,clazz){
+			var source;
+			// Fix for old IE versions
+			if (!event.target) { source = event.srcElement; } else { source = event.target; }
+			if (source.tagName=="TR"||source.tagName=="TABLE")
+				return;
+			while(source.tagName!="TD") {
+				// alert(source.tagName);
+				source=source.parentNode;
+			}
+			source.className=clazz;
+		}
+	  </script>
+	</head>
+
+    <body> 
+    
+	<header id="header">
+	<div class="innertube" style="vertical-align: middle;" >
+		<div style="float: left; width: 85%;" >
+			<font face='arial' size='5' color='#000066'><b>BSL Numbers Signs</b></font>
+		</div>
+		<div align="center" style="position: absolute; float: left; right: 15px;">
+			<input type='button' name='btn' value='Back'
+				onclick='window.location="TopIndex.html";'/>
+		</div>
+	</div>
+	</header>
+
+	<main id="main">
+	<div class="plain" >
+
+	<table class="indextab" >
+
+	  <tr>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/0.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/0.jpg" class="imgpane">
+			<br/>
+			0
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/1.sigml")'
+			onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/1.jpg" class="imgpane">
+			<br/>
+			1
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/2.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/2.jpg" class="imgpane">
+			<br/>
+			2
+		</a>
+		</div>
+	  </td>
+	  
+ 	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/3.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/3.jpg" class="imgpane">
+			<br/>
+			3
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/4.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/4.jpg" class="imgpane">
+			<br/>
+			4
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/5.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/5.jpg" class="imgpane">
+			<br/>
+			5
+		</a>
+		</div>
+	  </td>
+	  
+	  </tr>
+
+	  <tr>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/6.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/6.jpg" class="imgpane">
+			<br/>
+			6
+		</a>
+		</div>
+	  </td>
+
+  	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/7.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/7.jpg" class="imgpane">
+			<br/>
+			7
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/8.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/8.jpg" class="imgpane">
+			<br/>
+			8
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/9.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/9.jpg" class="imgpane">
+			<br/>
+			9
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/10.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/10.jpg" class="imgpane">
+			<br/>
+			10
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/11.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/11.jpg" class="imgpane">
+			<br/>
+			11
+		</a>
+		</div>
+	  </td>
+	  
+	  </tr>
+
+	  <tr>
+
+  	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/12.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/12.jpg" class="imgpane">
+			<br/>
+			12
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/13.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/13.jpg" class="imgpane">
+			<br/>
+			13
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/100.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/100.jpg" class="imgpane">
+			<br/>
+			100
+		</a>
+		</div>
+	  </td>
+
+	  </tr>
+
+	</table>
+
+	</div>
+	</main>
+	</body>
+</html>

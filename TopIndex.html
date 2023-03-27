@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>BSL Examples : Index Page</title>
+      <link rel='stylesheet' href='scripts/bslex.css' type='text/css' media='screen' />
+      <script language='javascript'>
+		function startPlayer(objURL) {
+			parent.appletframe.startPlayer(objURL);
+		}
+		function SetClass(event,clazz){
+			var source;
+			// Fix for old IE versions
+			if (!event.target) { source = event.srcElement; } else { source = event.target; }
+			if (source.tagName=="TR"||source.tagName=="TABLE")
+				return;
+			while(source.tagName!="TD") {
+				// alert(source.tagName);
+				source=source.parentNode;
+			}
+			source.className=clazz;
+		}
+	  </script>
+	</head>
+
+    <body> 
+
+	<header id="header">
+	<div class="innertube" style="vertical-align: middle;" >
+		<div style="float: left; width: 85%;" >
+			<font face='arial' size='5' color='#000066'><b>BSL Examples Menu</b></font>
+		</div>
+		<div align="center" style="position: absolute; float: left; right: 15px;">
+			<input type='button' name='btn' value='Home'
+				onclick='parent.appletframe.location="imageframe.html";window.location="home.html";'/>
+		</div>
+	</div>
+	</header>
+
+	<main id="main">
+	<div class="plain" >
+
+	<table class="indextab" >
+
+	  <tr>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onClick = 'window.location="AlphabetIndex.html";'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/A.jpg" class="imgpane">
+			<br/>
+			Alphabet
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onClick = 'window.location="NumberIndex.html";'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Numbers/1.jpg" class="imgpane">
+			<br/>
+			Numbers
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onClick = 'window.location="ColourIndex.html";'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Colours/Colour.jpg" class="imgpane">
+			<br/>
+			Colours
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onClick = 'window.location="CountryIndex.html";'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Countries/Britain.jpg" class="imgpane">
+			<br/>
+			Countries
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onClick = 'window.location="PeopleIndex.html";'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Anna.jpg" class="imgpane">
+			<br/>
+			People
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onClick = 'window.location="DescribingIndex.html";'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/descriptions/beautiful.jpg" class="imgpane">
+			<br/>
+			Describing
+			</a>
+		</div>
+	  </td>
+
+	  </tr>
+	  
+	  <tr>
+	  	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a	onClick = 'window.location="QuestionIndex.html";'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Questions/What.jpg" class="imgpane">
+			<br/>
+			Questions
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a	onClick = 'window.location="PhrasesIndex.html";'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Questions/How.jpg" class="imgpane">
+			<br/>
+			Phrases
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a	onClick = 'window.location="TimeIndex.html";'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/blank.jpg" class="imgpane">
+			<br/>
+			Time
+		</a>
+		</div>
+	  </td>
+	  
+	  <td/>
+	  <td/>
+	  
+	  </tr>
+	  
+	</table>
+
+	</div>
+	</main>
+	</body>
+</html>
+

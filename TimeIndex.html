@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>BSL Examples : Time Page</title>
+      <link rel='stylesheet' href='scripts/bslex.css' type='text/css' media='screen' />
+      <script language='javascript'>
+		function startPlayer(objURL) {
+			parent.appletframe.startPlayer(objURL);
+		}
+		function SetClass(event,clazz){
+			var source;
+			// Fix for old IE versions
+			if (!event.target) { source = event.srcElement; } else { source = event.target; }
+			if (source.tagName=="TR"||source.tagName=="TABLE")
+				return;
+			while(source.tagName!="TD") {
+				// alert(source.tagName);
+				source=source.parentNode;
+			}
+			source.className=clazz;
+		}
+	  </script>
+	</head>
+
+    <body> 
+    
+	<header id="header">
+	<div class="innertube" style="vertical-align: middle;" >
+		<div style="float: left; width: 85%;" >
+			<font face='arial' size='5' color='#000066'><b>BSL Time Signs</b></font>
+		</div>
+		<div align="center" style="position: absolute; float: left; right: 15px;">
+			<input type='button' name='btn' value='Back'
+				onclick='window.location="TopIndex.html";'/>
+		</div>
+	</div>
+	</header>
+
+	<main id="main">
+	<div class="plain" >
+
+	<table class="indextab" >
+
+	  <tr>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/time.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/blank.jpg" class="imgpane">
+			<br/>
+			Time
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/morning.sigml")'
+			onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Time/Morning.jpg" class="imgpane">
+			<br/>
+			Morning
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/afternoon.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Time/Afternoon.jpg" class="imgpane">
+			<br/>
+			Afternoon
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/evening.sigml")'
+			onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Time/Evening.jpg" class="imgpane">
+			<br/>
+			Evening
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/everyday.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Time/Every.jpg" class="imgpane">
+			<br/>
+			Every Day
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/yesterday.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Time/Yesterday.jpg" class="imgpane">
+			<br/>
+			Yesterday
+		</a>
+		</div>
+	  </td>
+	  
+	  </tr>
+
+	  <tr>
+
+  	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/today.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Time/Today.jpg" class="imgpane">
+			<br/>
+			Today
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/tomorrow.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Time/Tomorrow.jpg" class="imgpane">
+			<br/>
+			Tomorrow
+		</a>
+		</div>
+	  </td>
+
+	  </tr>
+
+	</table>
+
+	</div>
+	</main>
+	</body>
+</html>

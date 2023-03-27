@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+  <html>
+    <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>BSL Examples : Phrases Page</title>
+      <link rel='stylesheet' href='scripts/bslex.css' type='text/css' media='screen' />
+      <script language='javascript'>
+		function startPlayer(objURL) {
+			parent.appletframe.startPlayer(objURL);
+		}
+		function SetClass(event,clazz){
+			var source;
+			// Fix for old IE versions
+			if (!event.target) { source = event.srcElement; } else { source = event.target; }
+			if (source.tagName=="TR"||source.tagName=="TABLE")
+				return;
+			while(source.tagName!="TD") {
+				// alert(source.tagName);
+				source=source.parentNode;
+			}
+			source.className=clazz;
+		}
+	  </script>
+	</head>
+
+    <body> 
+    
+	<header id="header">
+	<div class="innertube" style="vertical-align: middle;" >
+		<div style="float: left; width: 85%;" >
+			<font face='arial' size='5' color='#000066'><b>Simple BSL Phrases</b></font>
+		</div>
+		<div align="center" style="position: absolute; float: left; right: 15px;">
+			<input type='button' name='btn' value='Back'
+				onclick='window.location="TopIndex.html";'/>
+		</div>
+	</div>
+	</header>
+
+	<main id="main">
+	<div class="plain" >
+
+	<table class="indextab" >
+
+	  <tr>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/hello.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/blank.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			Hello!
+			</div>
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/bye.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/blank.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			Bye
+			<div class="subdesc">[look sad]</div>
+			</div>
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/yes.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/blank.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			Yes
+			<div class="subdesc">[You can nod too]</div>
+			</div>
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/no.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/blank.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			No
+			<div class="subdesc">[You can shake your head too]</div>
+			</div>
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/yournamewhat.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Questions/What.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			What is your name?
+			<div class="subdesc">{Your name what?}</div>
+			</div>
+		</a>
+		</div>
+	  </td>
+	  
+	  </tr>
+
+	  <tr>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/howareyou.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Questions/How.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			How are you?
+			</div>
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/youhowold.sigml")'
+			onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Questions/How.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			How old are you?
+			<div class="subdesc">{You how old?}</div>
+			</div>
+		</a>
+ 		</div>
+	  </td>
+
+  	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/livewhere.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Questions/Where.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			Where do you live?
+			<div class="subdesc">{live where?}</div>
+			</div>
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/yourhobbieswhat.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Questions/What.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			What are your hobbies?
+			<div class="subdesc">{your hobbies what?}</div>
+			</div>
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/anothertime2.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/descriptions/another.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			Another Time
+		</a>
+		</div>
+	  </td>
+	  
+	  </tr>
+
+	  <tr>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/iunderstand.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/descriptions/Understand.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			I understand
+			</div>
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/donotunderstand.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/descriptions/Understand.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			I don't understand
+			<div class="subdesc">[shake your head]</div>
+			</div>
+		</a>
+		</div>
+	  </td>
+
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/bsl.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/Letters/B.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			BSL
+			<div class="subdesc">Spell {B&nbsp;S&nbsp;L}</div>
+			</div>
+		</a>
+		</div>
+	  </td>
+	  
+	  <td class="imgnorm">
+		<div class="imgframe">
+		<a onclick='startPlayer("SignFiles/canyousign.sigml")'
+				onmouseover="SetClass(event,'imgover');" onmouseout="SetClass(event,'imgnorm');">
+			<img src="Images/descriptions/sign.jpg" class="imgpane bigimage">
+			<div class="bigdesc">
+			Can you sign?
+			</div>
+		</a>
+		</div>
+	  </td>
+
+	  </tr>
+
+	</table>
+
+	</div>
+	</main>
+	</body>
+</html>
